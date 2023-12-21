@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "npm run server:dev",
     "prod": "npm run lint && npm run build && npm run server:prod",
-    "build": "npm instal -g vite && vite build",
+    "build": "vite build",
     "server": "node --loader ts-node/esm ./server/index.ts",
     "server:dev": "npm run server",
     "server:prod": "cross-env NODE_ENV=production npm run server",
@@ -29,11 +29,8 @@
     "sirv": "^2.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6",
-    "vike": "^0.4.144",
-    "vite": "^4.4.9"
+    "vite": "^4.4.9",
+    "vike": "^0.4.149"
   },
-  "type": "module",
-  "devDependencies": {
-    "html-loader": "^4.2.0"
-  }
+  "type": "module"
 }
